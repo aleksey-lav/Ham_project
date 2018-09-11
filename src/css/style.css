@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Montserrat', sans-serif;
     src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+    src: url("../fonts/Montserrat/Montserrat-Light.ttf");
 }
 body{
     margin: 0;
@@ -16,6 +18,10 @@ body{
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+}
+h1, h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .navbar{
     position: fixed;
@@ -84,13 +90,16 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-.navbar-nav-link:hover{
-    color: #18cfab;
-    /*padding-bottom: 58px;*/
-    /*border-bottom: 3px solid #18cfab;*/
-    transition: all 0.5s;
-
+.navbar-nav-link:after {
+    width: 100%;
 }
+
+/*.search {*/
+    /*position: relative;*/
+    /*margin-top: 18px;*/
+    /*overflow: hidden;*/
+    /*color: #fff;*/
+/*}*/
 .fa-search:before {
     content: "\f002";
     font-size: 20px;
@@ -103,8 +112,78 @@ body{
 }
 .hero-header{
     background-image: url(../img/sections_background/section1_header.jpg);
-    height: 100vh;
+    height: 1012px;
     background-size: cover;
 }
+.row{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-top: 50px;
+}
+.home-title {
+    font-family: 'Montserrat-Reular';
+    text-transform: uppercase;
+}
+.text-center {
+    text-align: center;
+}
+.pre-title{
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+}
+.home-title .pre-title .color-aqua {
+    font-size: 35px;
+    font-weight: 700;
+    color: #18cfab;
+}
+.home-title .home-main-title {
+    font-size: 79px;
+    font-weight: 700;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+.home-title .last-title {
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 74px;
+    color: #d4d4d4;
+    text-transform: none;
+    transform: scaleX(1.0005);/* width and height properties ommitted due to transform */
+    font-family: 'Montserrat-Light';
+}
+.two-center-buttons{
+    margin-top: 100px;
+}
+.left-button {
+    margin-right: 30px;
+    background-color: #18cfab;
+}
+.left-button, .right-button {
+    width: 165px;
+    height: 60px;
+    border-radius: 4px;
+    border-width: 0;
+    color: #fff;
+    font-family: "Montserrat-Regular";
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.white-border {
+    -webkit-box-shadow: 0 -5px 2px 0 #fff;
+    -moz-box-shadow: 0 -5px 2px 0 #fff;
+    box-shadow: 0 -5px 2px 0 #fff;
+}
+.right-button{
+    background-color: #00cbf6;
+}
+
 
 
