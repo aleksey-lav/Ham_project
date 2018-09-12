@@ -28,6 +28,7 @@ h1, h2 {
     width: 100%;
     height: 120px;
     background-color: rgba(73, 71, 63, 0.6);
+    z-index: 999;
 }
 .container {
     width: 1160px;
@@ -261,7 +262,7 @@ h1, h2 {
 /*Our amazing services*/
 .work {
     background-color: #f8fcfe;
-    border-bottom: 1px solid #e1e1e1;
+
 }
 .work__title {
     margin-top: 160px;
@@ -270,7 +271,6 @@ h1, h2 {
 .section-title {
     display: inline-block;
     position: relative;
-    margin-bottom: 65px;
     padding-bottom: 30px;
     font-size: 36px;
     text-transform: capitalize;
@@ -289,7 +289,6 @@ h1, h2 {
     margin-left: -32px;
 }
 .section-title:after {
-
     content: '';
     position: absolute;
     top: 95%;
@@ -299,24 +298,28 @@ h1, h2 {
     border-bottom: 1px solid #18cfab;
     margin-left: -44px;
 }
-.work-menu ul {
-    display: inline-block;
+.work-menu{
+    display: flex;
+    justify-content: center;
+}
+.work-menu ul{
+    width: 650px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
     padding: 0;
     margin: 0;
-    font-size: 0;
+}
+.work-menu li{
     border: 1px solid #ebebeb;
-    background-color: #FFF;
-}
-.work-menu li:not(:last-child) {
-    border-right: 1px solid #ebebeb;
-}
-.work-menu li {
-    display: inline-block;
-    font-weight: 400;
+    font-size: 14px;
+    color: rgb( 113, 113, 113 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .work-menu a {
      position: relative;
-     display: block;
      padding: 20px;
      font-size: 14px;
      text-transform: uppercase;
